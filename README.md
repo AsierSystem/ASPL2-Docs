@@ -65,6 +65,13 @@ LOOP;
   WAIT("0");
 ENDLOOP;
 ```
+### Waiting.
+If you didn't catch the hint in the warning above, the WAIT command orders the system to wait for a custom number of seconds.
+```
+PRINT("hi");
+WAIT("1");
+PRINT("hi");
+```
 ### If Statements
 To operate an If statement, you need a similar setup to Loops
 ```
