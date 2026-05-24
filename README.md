@@ -12,3 +12,23 @@ Asier System Uses a centralised coordinates system (x0, y0 is the center). The l
 **With that, lets start! fun programming!**
 
 ## The basics
+Asier System is heavily inspired by Basic and Fortran, the key difference is that it has an easier syntax that's common in most commands.
+
+Commands are in Uppercase, please remember this.
+```
+PRINT("hello"); <-- Works
+print("hello"); <-- Won't work
+```
+In ASPL2, its **mandatory** to put a semicolon at the end of the line. As the ASPL interpreter in Asier system divides the commands using ;
+
+## Printing
+Rendering text is a crucial task for most programs, Asier System uses the .asff format, which, currently, is the only font file that works in Asier System.
+Asier System uses <a href="https://raw.githubusercontent.com/AsierSystem/AsierSystem/refs/heads/main/Resources/Fonts/ASunicode.asff">ASunicode</a> font for default, and can be found at A:/kernel/fonts/shellfont.asff
+Docs on how to manipulate and create .asff fonts will come soon
+
+###Commands used for rendering text
+```
+PRINT("Hello, world!"); <- Prints text in an automatically selected position
+SPECIALTEXT("Hello, world!","x","y","hex colour","size"); <- Prints text with a customizable colour, position and size** (size doesnt work yet and has given problems since build 121, please for normal text use size 1.
+SETFONT("path"); <- changes the font depending to the path*
+```
