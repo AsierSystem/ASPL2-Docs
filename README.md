@@ -136,5 +136,12 @@ ASK(">");
 PRINT("!last_answer!);
 ```
 ## System APIs
-The system APIs can be useful 
+The system APIs can be useful for making programs that need to communicate with the System directly.
 
+List of System APIs
+
+·time -> Returns the time and date in HH:MM:SS YYYY/MM/DD
+
+·battery -> Returns the battery percentage
+
+·battery_ch -> Checks if the device is charging currently.
