@@ -19,6 +19,7 @@ Commands are in Uppercase, please remember this.
 PRINT("hello"); <-- Works
 print("hello"); <-- Won't work
 ```
+Nested IF statements don't work yet, for some unknown reasons the interpreter freaks out. Avoid using it for now.
 In ASPL2, its **mandatory** to put a semicolon at the end of the line. As the ASPL interpreter in Asier system divides the commands using ;
 
 ## Printing
@@ -31,4 +32,17 @@ Docs on how to manipulate and create .asff fonts will come soon
 PRINT("Hello, world!"); <- Prints text in an automatically selected position
 SPECIALTEXT("Hello, world!","x","y","hex colour","size"); <- Prints text with a customizable colour, position and size** (size doesnt work yet and has given problems since build 121, please for normal text use size 1).
 SETFONT("path"); <- changes the font depending to the path*
+```
+
+## Rendering
+ASPL takes advantage of the HTML Canvas Asier System's based on. You can use many rendering commands to paint complex shapes and images.
+
+### Rendering Commands
+```
+IMAGE("url or path","x","y","witdh","height"); <- Renders an image
+SQUARE("x","y","width","height","hex colour","roundness") <- Renders a Rectangle
+TRI("vertex1's x", "vertex1's y","vertex2's x","vertex2's y","vertex3's x","vertex3's y","hex colour"); <- Renders a Triangle
+PIXEL("x","y","hexcolour"); <- Renders a Pixel
+LINE("point1's x","point1's y","point2's x","point2's y"); <- Renders a line
+VIDEO("url or path","x","y","witdh","height"); <- Renders a video*
 ```
