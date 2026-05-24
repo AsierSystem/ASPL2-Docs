@@ -46,3 +46,22 @@ PIXEL("x","y","hexcolour"); <- Renders a Pixel
 LINE("point1's x","point1's y","point2's x","point2's y"); <- Renders a line
 VIDEO("url or path","x","y","witdh","height"); <- Renders a video*
 ```
+
+## Logic
+ASPL2 is able to use Loops, If statements and Variables
+### Loops
+To make a loop, you just need 2 lines
+```
+LOOP;
+  EVERYTHING IN BETWEEN WILL RUN INDEFINETLY
+ENDLOOP;
+```
+***Warning***
+When using CLEARCANVAS inside a loop, a flickering might appear, this might be dangerous for photosensitive people. To prevent this, use the WAIT command, and make it wait 0 seconds, it will basically pause the system for a frame. Pauses must be higher if an image is rendered in the Loop.
+```
+LOOP;
+  PRINT("hi");
+  CLEARCANVAS;
+  WAIT("0");
+ENDLOOP
+```
