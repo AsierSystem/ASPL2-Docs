@@ -9,7 +9,6 @@ If a command's introduction ends with **, it means that this command has given p
 
 Asier System Uses a centralised coordinates system (x0, y0 is the center). The limits of this position system depends on the resolution of your device (as of version v.1.0.2)
 
-### Lets start!
-Have fun!
+**With that, lets start! fun programming!**
 
 ## The basics
