@@ -130,7 +130,7 @@ OUTPUT
 2
 ```
 ##Asking
-The ASK command is an input command that asks you for a string of text that you must type. Every text you type before pressing enter will be stored in the !last_answer! System API
+The ASK command is an input command that asks you for a string of text that you must type. Every text you type before pressing enter will be stored in the laslast_answer System API
 ```
 ASK(">");
 PRINT("!last_answer!);
@@ -145,3 +145,47 @@ List of System APIs
 ·battery -> Returns the battery percentage
 
 ·battery_ch -> Checks if the device is charging currently.
+
+·battery_suc -> Returns the time in seconds the battery will take to run out
+
+·mousex -> Returns the x position of the mouse cursor
+
+·mousey -> Returns the y position of the mouse cursor
+
+·clicked -> Checks if the mouse is down
+
+·last_file -> Returns the status of the last processed file
+
+·last_answer -> Last text introduced to an ASK input
+
+·last_json -> Last JSON object processed
+
+·js -> Last JS script processed
+
+·last_math -> Last math operation processed
+
+·hostbrowser -> The Browser that's running Asier System
+
+·hostos -> The host OS of the computer (precision may vary)
+
+·arch -> Returns if the computer is 32 bit or 64 bit
+
+·core -> Number of CPU cores the computer has
+
+·memory -> Number of GB of the device (only available in Chrome and Desktop)
+
+·desktop -> Returns a boolean that tells if the version of Asier System is desktop or not
+
+·version -> Returns the Version of Asier System
+
+·build -> Returns the build number of Asier System
+
+·width -> Returns the number of pixels that the HTML canvas' width is.
+
+·height -> Returns the number of pixels that the HTML canvas' height is.
+
+·hour -> Returns the current hour
+
+·min -> Returns the current minute
+
+·sec -> Returns the current second
