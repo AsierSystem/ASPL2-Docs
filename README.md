@@ -204,7 +204,7 @@ Output:
 The current time is 2026-05-24 12:30:06
 ```
 ## Mathematics
-The MATH command lets you operate with variables, APIs or numbers. It supports addition, substraction, comparison, fractions, multiplication, division, factorials, exponentials, square roots and the constants pi, euler, tau, phi, sqrt2 and sqrt5.
+The MATH command lets you operate with variables, APIs or numbers. It supports addition, substraction, comparison, fractions, multiplication, division, factorials, exponentials, square roots, the trigonometry functions sin, cos and tan, and the constants pi, euler, tau, phi, sqrt2 and sqrt5
 
 The processed result is stored in the last_math System API.
 ```
@@ -214,4 +214,16 @@ PRINT("!last math!");
 
 Output:
 4.14159265359
+```
+## Javascript Eval
+You might hate Asier System's limits, this command's just for you
+
+The EVAL command is made to evaluate a JS script, the result is stored in the js System API
+```
+Example:
+EVAL("2+2");
+PRINT("js");
+
+Output:
+4
 ```
