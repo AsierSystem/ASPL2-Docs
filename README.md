@@ -192,12 +192,26 @@ The system APIs can be useful for making programs that need to communicate with 
 
 ·tz -> Returns the timezone (UTC+x)
 
+·last_fetch -> Returns the last fetched url
+
 ### How to use the System APIs
 Similar to variables, to show and use System APIs you must write the name of the API between exclamation marks (!)
 ```
 Example:
-PRINT("The current time is !time!")
+PRINT("The current time is !time!");
 
 Output:
 The current time is 2026-05-24 12:30:06
+```
+## Mathematics
+The MATH command lets you operate with variables, APIs or numbers. It supports addition, substraction, comparison, fractions, multiplication, division, factorials, exponentials, square roots and the constants pi, euler, tau, phi, sqrt2 and sqrt5.
+
+The processed result is stored in the last_math System API.
+```
+Example:
+MATH("pi+1");
+PRINT("!last math!");
+
+Output:
+4.14159265359
 ```
