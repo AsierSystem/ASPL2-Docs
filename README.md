@@ -129,3 +129,12 @@ OUTPUT
 ```
 2
 ```
+##Asking
+The ASK command is an input command that asks you for a string of text that you must type. Every text you type before pressing enter will be stored in the !last_answer! System API
+```
+ASK(">");
+PRINT("!last_answer!);
+```
+## System APIs
+The system APIs can be useful 
+
