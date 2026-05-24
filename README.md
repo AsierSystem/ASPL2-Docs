@@ -138,7 +138,7 @@ PRINT("!last_answer!);
 ## System APIs
 The system APIs can be useful for making programs that need to communicate with the System directly.
 
-List of System APIs
+### List of System APIs
 
 ·time -> Returns the time and date in HH:MM:SS YYYY/MM/DD
 
@@ -189,3 +189,15 @@ List of System APIs
 ·min -> Returns the current minute
 
 ·sec -> Returns the current second
+
+·tz -> Returns the timezone (UTC+x)
+
+### How to use the System APIs
+Similar to variables, to show and use System APIs you must write the name of the API between exclamation marks (!)
+```
+Example:
+PRINT("The current time is !time!")
+
+Output:
+The current time is 2026-05-24 12:30:06
+```
