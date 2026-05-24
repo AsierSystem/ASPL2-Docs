@@ -53,7 +53,7 @@ ASPL2 is able to use Loops, If statements and Variables
 To make a loop, you just need 2 lines
 ```
 LOOP;
-  EVERYTHING IN BETWEEN WILL RUN INDEFINETLY
+  EVERYTHING IN BETWEEN WILL RUN INDEFINETLY;
 ENDLOOP;
 ```
 ***Warning***
@@ -63,5 +63,38 @@ LOOP;
   PRINT("hi");
   CLEARCANVAS;
   WAIT("0");
-ENDLOOP
+ENDLOOP;
+```
+### If Statements
+To operate an If statement, you need a similar setup to Loops
+```
+IF("condition");
+  EVERYTHING IN BETWEEN WILL RUN IF THE CONDITION IS TRUE;
+ENDIF;
+```
+There are many ways to manipulate a condition, using...
+#### Operations used for conditions
+##### 1. Check if a string is the same in both sides
+To check if a string or number is the same in both sides, use ==
+```
+EXAMPLE
+IF("1==1");
+  PRINT("hi");
+ENDIF;
+```
+##### 2. Compare operation and result
+To compare an Operation on the left side to a result on the right side, use =
+```
+EXAMPLE
+IF("1+2=3");
+  PRINT("hi");
+ENDIF;
+```
+##### 3. Boolean extravaganza
+If any other type of operation returns true, it works.
+```
+EXAMPLE
+IF("1<2");
+  PRINT("hi");
+ENDIF
 ```
