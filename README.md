@@ -65,7 +65,7 @@ LOOP;
   WAIT("0");
 ENDLOOP;
 ```
-### Waiting.
+### Waiting
 If you didn't catch the hint in the warning above, the WAIT command orders the system to wait for a custom number of seconds.
 ```
 PRINT("hi");
@@ -104,4 +104,28 @@ EXAMPLE
 IF("1<2");
   PRINT("hi");
 ENDIF
+```
+### Manipulating and Creating Variables.
+Variables can be useful to store and operate with temporal chunks of data.
+To set up a variable, use:
+```
+CREATEVAR("name");
+SETVAR("name","data");
+```
+You can also modify a variable using
+```
+SETVAR("name","data");
+ADDVAR("name","number"); <- eg. if name is 1 and you add it 1, it becomes 2. Works with decimal and negative numbers
+```
+#### How to show/use variables
+To show/use a variable, you have to write the name of the variable between % in any field.
+```
+EXAMPLE
+CREATEVAR("hi");
+SETVAR("hi","2");
+PRINT("%hi%");
+```
+OUTPUT
+```
+2
 ```
