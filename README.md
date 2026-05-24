@@ -26,9 +26,9 @@ Rendering text is a crucial task for most programs, Asier System uses the .asff 
 Asier System uses <a href="https://raw.githubusercontent.com/AsierSystem/AsierSystem/refs/heads/main/Resources/Fonts/ASunicode.asff">ASunicode</a> font for default, and can be found at A:/kernel/fonts/shellfont.asff
 Docs on how to manipulate and create .asff fonts will come soon
 
-###Commands used for rendering text
+### Commands used for rendering text
 ```
 PRINT("Hello, world!"); <- Prints text in an automatically selected position
-SPECIALTEXT("Hello, world!","x","y","hex colour","size"); <- Prints text with a customizable colour, position and size** (size doesnt work yet and has given problems since build 121, please for normal text use size 1.
+SPECIALTEXT("Hello, world!","x","y","hex colour","size"); <- Prints text with a customizable colour, position and size** (size doesnt work yet and has given problems since build 121, please for normal text use size 1).
 SETFONT("path"); <- changes the font depending to the path*
 ```
